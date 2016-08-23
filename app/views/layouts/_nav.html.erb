@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#toggle-nav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to 'William Farm Produce', root_path, class: 'navbar-brand' %>
+    </div>
+    <div class="collapse navbar-collapse" id="toggle-nav">
+      <ul class="nav navbar-nav">
+        <li>
+          <%= link_to "About Us", about_path %>
+        </li>
+        <li>
+          <%= link_to "Events", root_path %>
+        </li>
+        <li>
+          <%= link_to "Contact Us", contact_path %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

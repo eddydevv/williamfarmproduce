@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WilliamProduceRails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="outer-wrapper">
+      <%= render 'layouts/nav' %>
+      <div class="inner-wrapper container">
+        <% if @page_header %>
+          <%= render 'layouts/header' %>
+        <% end %>
+        <%= yield %>
+      </div>
+      <%= render 'layouts/footer' %>
+    </div>
+  </body>
+</html>
