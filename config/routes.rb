@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :produces
   root  'home#index'
 
   get   'home'          =>  'home#index'
