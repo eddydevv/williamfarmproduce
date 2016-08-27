@@ -12,7 +12,7 @@
     <div class="outer-wrapper">
       <%= render 'layouts/nav' %>
       <div class="inner-wrapper container">
-        <% if @page_header %>
+        <% if @page_header && @page_header != 'home' %>
           <%= render 'layouts/header' %>
         <% end %>
         <%= yield %>

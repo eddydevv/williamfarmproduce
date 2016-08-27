@@ -1,3 +1,22 @@
-// Place all the styles related to the produces controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.produce-box {
+  background: rgba($light_cyan, 0.2);
+  padding: 30px;
+  margin: 10px;
+  min-height: 32vh;
+  .side-image {
+    .produce-img {
+      border: 3px solid rgba($raisin_black, 0.6);
+    }
+  }
+  .produce-info {
+    color: $light_yellow;
+    font-family: $farsan;
+    h3{
+      text-transform: uppercase;
+      font-size: 2em;
+    }
+    .produce-description {
+      font-size: 1.5em;
+    }
+  }
+}

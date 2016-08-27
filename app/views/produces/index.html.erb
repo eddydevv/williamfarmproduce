@@ -1,2 +1,17 @@
 <section>
+  <% @produces.each do |produce| %>
+    <div class="produce-box">
+      <div class="side-image col-md-4">
+        <%= image_tag "carousel/#{produce.name.parameterize.underscore}", size: '300x250', alt: produce.name, class: 'produce-img' %>
+      </div>
+      <div class="produce-info col-md-8">
+        <h3><%= produce.name %></h3>
+        <div class="produce-description">
+          <p>
+            <%= produce.description %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </section>
