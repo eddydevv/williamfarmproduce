@@ -8,8 +8,8 @@
 //= require_tree .
 
 
-let startup = function () {
-  
+let startup_func = function () {
+
   // $('.multi-item-carousel').carousel({
   //   interval: 300
   // });
@@ -33,4 +33,4 @@ let startup = function () {
   });
 }
 
-$(document).on('turbolinks:load', startup())
+$(document).on('turbolinks:load', startup_func())
