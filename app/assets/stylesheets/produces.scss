@@ -1,8 +1,10 @@
 .produce-box {
   background: rgba($light_cyan, 0.2);
-  padding: 30px;
-  margin: 10px;
+  padding: 3%;
+  margin: 3%;
   min-height: 32vh;
+  max-height: 40vh;
+  overflow: scroll;
   .side-image {
     .produce-img {
       border: 3px solid rgba($raisin_black, 0.6);
